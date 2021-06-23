@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Trivia de Animales Mexicanos en peligro de extinsión</title>
+  </head>
+  
+  <body>
+    <div id="pantallaBienvenida">  
+     <h1>Trivia de animales mexicanos en peligro de   extinción</h1>
+      <p align=justify>Esta es una pequeña trivia que trata de recopilar información sobre el ajolote y poder generar conciencia para que dejen de estar en peligro de extinsión</p>
+      <p> Para comenzar danos tu nombre </p>
+    <input type="text" id="nombre">
+    <br>
+    <p>¿Que trivia deseas jugar?</p>
+      <!--Botones de Tirvias-->
+      <input type="button" value="triviaAjolote" onclick="seleccionarTrivia(1)">
+      <input type="button" value="triviaAguila" onclick="seleccionarTrivia(2)">
+    </div>
+    <!--Inicia trivia del ajolote-->
+    <div id="triviaAjolote">
+    <div id="divPreguntaAjolote1" style="display:none">
+     <label for="escpecies">1.¿Cuantos años vive un ajolote?</label>
+      <select name="preguntaAjolote1" id="preguntaAjolote1" multiple>
+        <option value="1A">5 Años</option>
+        <option value="1B">10 Años</option>
+        <option value="1C">15 Años</option>
+        <option value="1D">4 Años</option>
+      </select>
+    </div>
+    <div id="divPreguntaAjolote2" style="display:none">
+     <label for="escpecies">2.¿De donde es originario el ajolote?:</label>
+      <select name="preguntaAjolote2" id="preguntaAjolote2" multiple>
+      <option value="2A">Chihuahua</option>
+      <option value="2B">Xochimilco</option>
+      <option value="2C">Veracruz</option>
+      <option value="2D">Ecatepec</option>           </select>
+    </div>
+    <div id="divPreguntaAjolote3" style="display:none">
+    <label for="escpecies">3.- ¿Cuál es el nombre científico del ajolote?:</label>
+    <select name="preguntaAjolote3" id="preguntaAjolote3" multiple>
+      <option value="3A">Ambystoma mexicanum</option>
+      <option value="3B">Aquila chrysaetos</option>
+      <option value="3C">Harpia harpyja</option>
+      <option value="3D">Lobus Picture</option>
+    </select>
+    </div>
+    <div id="divPreguntaAjolote4" style="display:none">
+    <label for="escpecies">4. ¿Qué come el ajolote?:</label>
+      <select name="preguntaAjolote4" id="preguntaAjolote4" multiple>
+        <option value="4A">Chicharrones</option>
+        <option value="4B">Pequeños crustáceos</option>
+        <option value="4C">Golosinas</option>
+        <option value="4D">Insectos</option>
+      </select>
+    </div>
+    <div id="divPreguntaAjolote5" style="display:none">
+      <label for="escpecies">5. ¿De qué color es el ajolote?:</label>
+      <select name="preguntaAjolote5" id="preguntaAjolote5" multiple>
+        <option value="5A">Azul</option>
+        <option value="5B">Verde</option>
+        <option value="5C">Gris</option>
+        <option value="5D">Rojo</option>
+      </select>
+    </div>
+    <!--Terminan las preguntas del Ajolote-->
+    <!--Inician Preguntas de águila-->
+    <div id="preguntasAguila">
+    <div id="divPreguntaAguila1" style="display:none">
+     <label for="especies">1.¿Sabes cuánto mide la embergadura del águila Real?</label>
+      <select name="pregunta1" id="preguntaAguila1" multiple>
+        <option value="1A">2.20 metros</option>
+        <option value="1B">1.90 metros</option>
+        <option value="1C">3.00 metros</option>
+        <option value="1D">1.50 metros</option>
+      </select>
+    </div>
+
+    <div id="divPreguntaAguila2" style="display:none">
+     <label for="escpecies">2.¿Sabes cuántos ejemplares de águilas Mexicanas existen en toda la República Mexicana?:</label>
+      <select name="pregunta2" id="preguntaAguila2" multiple>
+      <option value="2A">260</option>
+      <option value="2B">250</option>
+      <option value="2C">300</option>
+      <option value="2D">150</option>           </select>
+    </div>
+    <div id="divPreguntaAguila3" style="display:none">
+    <label for="escpecies">3.- ¿Qué edad debe cumplir el Águila Real para independizarse?</label>
+    <select name="pregunta3" id="preguntaAguila3" multiple>
+      <option value="3A">4 años</option>
+      <option value="3B">4.5 años</option>
+      <option value="3C">6 años</option>
+      <option value="3D">2 años</option>
+    </select>
+    </div>
+    <div id="divPreguntaAguila4" style="display:none">
+    <label for="escpecies">4. ¿Qué come las águilas?:</label>
+      <select name="pregunta4" id="preguntaAguila4" multiple>
+        <option value="4A">Chicharrones preparados</option>
+        <option value="4B">Conejos, liebres, aves de tañaño medio y lagartos.</option>
+        <option value="4C">Liebres, lagartos, serpientes.</option>
+        <option value="4D">Insectos</option>
+      </select>
+    </div>
+    <!--Finalizan las preguntas del ajolote-->
+    <!--Comienzan las preguntas del águila-->
+    <div id="divPreguntaAguila5" style="display:none">
+      <label for="escpecies">5. ¿Cuántos años vive el águila Real?:</label>
+      <select name="pregunta5" id="preguntaAguila5" multiple>
+        <option value="5A">Menos de 20 años</option>
+        <option value="5B">Entre 10 y 15 años</option>
+        <option value="5C">Más de 30 años</option>
+        <option value="5D">Menos de 5 años</option>
+      </select>
+    </div>
+  <!--Terminan preguntas del águila-->
+    <div id="pantallaFinal" style="display:none">
+      <p>
+      <span id='mostrarnombre'></span> resultado de la trivia es: 
+      <span id='mostrarResultado'>
+      </span> de 5.
+      </p>
+    </div>
+  </div> <!--Finaliza div de las preguntas del águila-->
+    <!--Es para desplazarse desde las preguntas-->
+    <div id="pantallaFinal" style="display:none">
+      <p>
+      <span id='mostrarnombre'></span> El resultado de la trivia es: 
+      <span id='mostrarResultado'>
+      </span> de 5.
+      </p>
+    </div>
+    <div id="controles">
+      <input type="button" value="siguiente" onclick="siguiente()" id="next">
+      <input type="button" value="¡Vuelve a jugar!" onclick="volverAJugar()">
+    </div> 
+       <!--Inicia el script-->
+   <script src="script.js"></script>
+   <script src="countdown.js"></script>
+  </body>
+</html>

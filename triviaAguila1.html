@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TriviaAguila</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Trivia de Mascotas Mexicanas en peligro de extinsión</title>
+  </head>
+  
+  <body>
+    <div id="pantallaBienvenida">  
+     <h1>Trivia de animales mexicanos en peligro de   extinción</h1>
+      <p>Esta es una pequeña trivia que trata de recopilar información sobre el ajolote y poder generar conciencia para que dejen de estar en peligro de extinsión</p>
+      <p> Para comenzar danos tu nombre </p>
+    <input type="text" id="nombre">
+ 
+
+    </div>
+    <div id="divPregunta1" style="display:none">
+     <label for="escpecies">1.¿Cuantos años vive un Tigre?</label>
+      <select name="pregunta1" id="pregunta1" multiple>
+        <option value="1A">5 Años</option>
+        <option value="1B">10 Años</option>
+        <option value="1C">15 Años</option>
+        <option value="1D">4 Años</option>
+      </select>
+    </div>
+    
+    <div id="divPregunta2" style="display:none">
+     <label for="escpecies">2.¿De donde es originario el tigre?:</label>
+      <select name="pregunta2" id="pregunta2" multiple>
+      <option value="2A">Chihuahua</option>
+      <option value="2B">Xochimilco</option>
+      <option value="2C">Veracruz</option>
+      <option value="2D">Ecatepec</option>           </select>
+    </div>
+    <div id="divPregunta3" style="display:none">
+    <label for="escpecies">3.- ¿Cuál es el nombre científico del ajolote?:</label>
+    <select name="pregunta3" id="pregunta3" multiple>
+      <option value="3A">Ambystoma mexicanum</option>
+      <option value="3B">Aquila chrysaetos</option>
+      <option value="3C">Harpia harpyja</option>
+      <option value="3D">Lobus Picture</option>
+    </select>
+    </div>
+    <div id="divPregunta4" style="display:none">
+    <label for="escpecies">4. ¿Qué come el ajolote?:</label>
+      <select name="pregunta4" id="pregunta4" multiple>
+        <option value="4A">Chicharrones</option>
+        <option value="4B">Pequeños crustáceos</option>
+        <option value="4C">Golosinas</option>
+        <option value="4D">Insectos</option>
+      </select>
+    </div>
+    <div id="divPregunta5" style="display:none">
+      <label for="escpecies">5. ¿De qué color es el ajolote?:</label>
+      <select name="pregunta5" id="pregunta5" multiple>
+        <option value="5A">Azul</option>
+        <option value="5B">Verde</option>
+        <option value="5C">Gris</option>
+        <option value="5D">Rojo</option>
+      </select>
+    </div>
+    <div id="pantallaFinal" style="display:none">
+      <p>
+      <span id='mostrarnombre'></span> resultado de la trivia es: 
+      <span id='mostrarResultado'>
+      </span> de 5.
+      </p>
+    </div>
+    <div id="controles">
+      <input type="button" value="siguiente" onclick="siguiente()">
+      <input type="button" value="¡Vuelve a jugar!" onclick="volverAJugar()">
+    </div> 
+       <!--Inicia el script-->
+   <script src="script.js"></script>
+
+  </body>
+</html>
